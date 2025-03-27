@@ -15,8 +15,8 @@ const SearchWithDebounce = () => {
 
     setLoading(true); // Show loader
 
-    const timer = setTimeout(() => {
-      fetch(api + query)
+    const timer=setTimeout(() => {
+      fetch(api+query)
         .then((res) => res.json())
         .then((data) => {
           setResults(data.products);

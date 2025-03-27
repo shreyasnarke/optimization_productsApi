@@ -1,13 +1,15 @@
 import React from "react";
-import Practice from "./components/Practice";
+import Practice from "./components/Practice"; 
+import CrudApp from "./components/CrudApp";   
+import { Container } from "@mui/material";
 
 function App() {
   return (
-    <>
-     {/*below code is fully functional and well-structured and optimized for real-world use. If you apply the above small tweaks, it’ll be production-ready and top-tier polished.*/}
-      <Practice/>
-    </>
-  )
+    <Container>
+      <Practice />
+      <CrudApp /> 
+    </Container>
+  );
 }
 
 export default App;
